@@ -1,4 +1,4 @@
 
 # Dependências
-backend/node_modules/
+**/node_modules/
 backend/package-lock.json
