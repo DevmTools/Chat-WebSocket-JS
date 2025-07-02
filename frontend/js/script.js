@@ -82,7 +82,8 @@ const handleLogin = (event) => {
     login.style.display = "none" // quando entrar, oculta a tela de login
     chat.style.display = "flex" // quando entrar, mostra a tela do chat
 
-    webSocket = new WebSocket(`ws://localhost:${8080}`)// cria a conexao
+    webSocket = new WebSocket(`wss://chat-websocket-js.onrender.com`)// cria a conexao
+    //webSocket = new WebSocket(`ws://localhost:${8080}`)// cria a conexao
     webSocket.onmessage = processMessage //processa mensagens vindas do servidor
 }
 
